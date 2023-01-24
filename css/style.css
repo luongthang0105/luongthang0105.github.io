@@ -1,0 +1,188 @@
+@font-face{
+	font-family: Lusiana;
+	src: url("../Fonts/lusiana/Lusiana.ttf");
+
+	font-family: HoneyBear;
+	src: url("../Fonts/Honey Bear.ttf");
+}
+body{
+	position:absolute;
+	height:99%;
+	width:99%;
+	background-image: url("../bg.jpg");
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+#main-circle{
+	position: relative;
+	display:block;	
+	margin-right:auto;
+	margin-left:520px;
+	padding: 70px 50px 50px 50px;
+	box-sizing: border-box;
+}
+#linkedin{
+	position:absolute;
+	left:655px;
+	top:458px;
+}
+#sidebar{
+	float:left;
+	position: fixed;
+	margin:0;
+	background:lightpink;
+	height:100%;
+	width:20%;
+}
+#sidebar ul{
+	padding-left:45px;
+}
+#sidebar li{
+	list-style: none;
+	position: relative;
+}
+#sidebar a{
+	text-decoration: none;
+	color: #885454;
+}
+#sidebar a:visited{
+	text-decoration: none;
+	color: #885454;
+}
+.container{
+	position: relative;
+	width:100%;
+	height:100%;
+}
+#abt-me{
+	position: absolute;
+	top:200px;
+	left:665px;
+}
+#abt-me li{
+	font-size: 20px;
+	font-family: trebuchet ms, sans-serif;
+	list-style-type: "🎈";
+	line-height: 1.8em ;
+}
+.content{
+	font-size:35px;
+/*	font-style: italic;
+*/
+	font-family: Lusiana;
+	cursor: pointer;
+	fill:black;
+	background-color: white;
+}
+.active, .content:hover{
+	fill: #00a5c9;
+	font-weight: 700;
+}
+#Projects{
+	position:absolute;
+	top:200px;
+	left:665px;
+	width: 400px;
+	height:400px;
+}
+.button-FNM{
+	position: absolute;
+	left:0px;
+	top:0px;
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	background-color: #c7c6ff; 
+	text-align: center;
+}
+.button-FNM h2{
+	font-family: HoneyBear;
+	padding-top: 10%;
+	color: #468499;
+}
+.button-FNM h3{
+	font-family: Garamond;
+	color: #000;
+}
+.button-SPD{
+	position: absolute;
+	left:220px;
+	top:0px;
+	width:200px;
+	height:200px;
+	border-radius: 50%;
+	background-color: #f5bc80; 
+	text-align: center;
+}
+.button-SPD h2{
+	font-family: HoneyBear;
+	padding-top: 7%;
+	color: #b93f3f;
+	margin-bottom:0;
+}
+.button-SPD h3{
+	font-family: Garamond;
+	padding-bottom: 30px;
+	margin:0;
+	color: #000;
+}
+.button-AAS{
+	position: absolute;
+	left:110px;
+	top:200px;
+	width:205px;
+	height:205px;
+	border-radius: 50%;
+	background-color: #8db435; 
+	text-align: center;
+}
+.button-AAS h2{
+	font-family: HoneyBear;
+	padding:0;
+	margin:0;
+	margin-top:10px;
+	color: #54089c;
+}
+
+.button-AAS h3{
+	font-family: Garamond;
+	padding-bottom: 40px;
+	margin:0;
+	color: #000;
+}
+
+.effect{
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+	transition: all ease 0.2s;
+}
+.effect:hover{
+	transform: translateY(-5px);
+ 	box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+#main-circle a:hover{
+	text-decoration: none;
+	color:white;
+}
+.media{
+	width: 50px;
+	height:50px;
+}
+.name-media{
+	position:absolute;
+	font-size:25px;
+	padding-top: 11px;
+}
+.Slides{
+	display:none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
