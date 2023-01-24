@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Latu's website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<aside id="sidebar">
+     		<ul>
+     			<li>
+     				<img src="latu18.png" >
+     			</li>
+     			<br>
+     			<li>
+     				<a href="https://www.linkedin.com/in/thang-nguyen-9014bb19b/" target="_blank"> 
+				 		<img class="media" src="blacklinkedin.png"> 
+				 		<span class="name-media">𝕝𝕚𝕟𝕜𝕖𝕕𝕚𝕟</span>
+
+					</a>
+     			</li>
+     			<br>
+     			<li>
+     				<a href="https://github.com/luongthang0105" target="_blank"> 
+				 		<img class="media" src="github.png"> 
+				 		<span class="name-media">𝕘𝕚𝕥𝕙𝕦𝕓</span>
+					</a>
+     			</li>
+     			<br>
+     			<li>
+     				<a href="https://www.instagram.com/chacchanlaluongthang/" target="_blank"> 
+				 		<img class="media" src="ig.png">
+				 		<span class="name-media">𝕚𝕟𝕤𝕥𝕒𝕘𝕣𝕒𝕞</span>
+					</a>
+     			</li>
+     			<br>
+     			<li>
+     				<a href="https://www.facebook.com/luongthang.nguyen.37ddwq/" target="_blank"> 
+				 		<img class="media" src="facebook.png">
+				 		<span class="name-media">𝕗𝕒𝕔𝕖𝕓𝕠𝕠𝕜</span>
+					</a>
+     			</li>
+     		</ul>
+     	</aside>
+     	<svg id="main-circle" width="700" height="700">
+			<path id="Circle" fill="#e99ac8" d="
+	    M 300 300
+	    m -250, 0
+	    a 250,250 0 1,1 500,0
+	    a 250,250 0 1,1 -500,0
+	    "/>
+
+			<text>
+				<textPath class="content" href="#Circle" side="right" startOffset="10%">
+				 	<a onClick="currentSlide(1)">About Me</a>
+			     </textPath>
+	  		</text>
+	  		
+	  		<text>
+				<textPath class="content" href="#Circle" side="right" startOffset="30%">
+				 	<a onClick="currentSlide(2)">My Projects</a>
+			     </textPath>
+	  		</text>
+	
+     	</svg>
+     	<div class="Slides fade">     		
+	     	<div id="abt-me">
+	     		<ul>
+	     			<li>my full name: Luong Thang Nguyen</li>
+	     			<li>nicknames: titanianic/titanic/Thang</li>
+	     			<li>d.o.b: May 1, 2004</li>
+	     			<li>degree: unsw-bachelor of compsci</li>
+	     			<li>games: lol, osu! ⭕, valorant 🔫,  <br> your heart ( ͡° ᴥ ͡°)</li>
+	     			<li>sports: basketball🏀</li>
+	     		</ul>
+	     	</div>
+	     </div>
+
+	     <div class="Slides fade">     		
+	     	<div id="Projects">
+	     		<a class="button-FNM effect" target="_blank"href="https://github.com/svenriksen/map-app"> 
+	     			<h2>Finding Nemo</h2>
+	     			<h3> Dory used this Flutter GPS app to find Nemo</h3>
+	     		</a>
+	     		<a class="button-SPD effect" target="_blank" href="https://github.com/luongthang0105/Dijkstra-Shortest-Path-Demo"> 
+	     			<h2> Shortest Path <br> Demonstration </h2>
+	     			<h3> Tom probably used this to catch Jerry </h3>
+	     		</a>
+	     		<a class="button-AAS effect" target="_blank" href="https://github.com/luongthang0105/Automatic-Attendance-System"> 
+	     			<h2> Automatic Attendance <br> System </h2>
+	     			<h3> I'm no longer in high school so I don't know if this project actually works</h3>
+	     		</a>
+	     	</div>
+	     </div>
+	     <div >
+	     	
+	     </div>
+     </div>
+ </body>
+
+<script type="text/javascript">
+	let slideIndex = 2;
+	showSlides(slideIndex);
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}	
+
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("Slides");
+		let contents = document.getElementsByClassName("content");
+
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			console.log(contents[i].getAttribute("class"));
+
+			contents[i].setAttribute("class", "content")
+		}
+
+		slides[slideIndex-1].style.display = "block";  
+		contents[slideIndex-1].setAttribute("class", "content active") ;
+	}
+ </script>
+</html>
