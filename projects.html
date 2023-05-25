@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas's Projects</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/86642ec80e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="project-page">
+        <header id="project-header">
+            <p>Thomas's Bizarre Projects</p>
+            <div class="back-button"> 
+                <a href="index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+        </header>
+    
+        <section id="project-container">
+            <div id="box-project" class="box">
+                <h1>
+                    <a href="https://github.com/luongthang0105/Finding-Dory" target="_blank">
+                        Finding Dory
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        The project was created using Python, Matplotlib library, and some abnormal home-made algorithms. 
+                    </li>
+                    <li>
+                        The main function of Finding Dory is to find the shortest path between 2 selected points and visualize it on the given maze.
+                    </li>
+                    <li>
+                        Specifically, I used the Dijkstra's algorithm to find the shortest path, and the Ray Casting algorithm to detect whether a point lies inside the polygon!
+                    </li>
+                </ul>
+            </div>
+            <div id="box-project" class="box">
+                <h1>
+                    <a href="https://github.com/svenriksen/map-app" target="_blank">
+                        Finding Nemo
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        Finding Nemo is an Android application that is created by the Flutter framework and has its data stored in the Firebase database.
+                    </li>
+                    <li>
+                        The application uses a Geolocation API to detect the exact location of the user on the map. 
+                    </li>
+                    <li>
+                        Other than that, one can see others' users' location if they add each other as a contact on the app.   
+                    </li>
+                </ul>
+            </div>
+            <div id="box-project" class="box">
+                <h1>
+                    <a href="https://github.com/luongthang0105/Automatic-Attendance-System" target="_blank">
+                        Automatic Attendance System (AAS)
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        The most tedious and enormous Arduino project I've ever done! 
+                    </li>
+                    <li>
+                        AAS keeps track of the attendance of a class by having the students tap their NFC card onto the Arduino system and recording each attendant on a seperate Excel file.
+                    </li>
+                    <li>
+                        About the hardwares, I used the RFID-RC522 Arduino module to read the students' info from NFC card. 
+                    </li>
+                    <li>
+                        On the other hand, whenever the system reads in a NFC card, it sends the received infos to the Excel file via the Parallax Data Acquisition tool (PLX-DAQ). 
+                    </li>
+                </ul>
+            </div>
+<!--             
+            <div id="box-thomas-at-unsw" class="box">
+                <h1>Thomas At UNSW</h1>
+            </div> -->
+        </section>
+        
+    </div>
+</body>
+</html>
